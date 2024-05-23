@@ -8,6 +8,7 @@ const Benefit = () => {
       {BENEFIT_ITEM.map((item) => (
         <div
           key={item.title}
+          data-aos="fade-up"
           className="bg-gradient-to-tr from-primary to-secondary rounded-md p-1 shadow-xl">
           <div className="flex flex-col justify-start items-center bg-white rounded-md p-4 max-w-80 w-full h-full">
             <div className="bg-gradient-to-tr from-primary to-secondary rounded-full p-1">

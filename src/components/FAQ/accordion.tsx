@@ -11,7 +11,7 @@ const Accordion = ({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="shadow-xl rounded-md overflow-hidden">
+    <div data-aos="fade-up" className="shadow-xl rounded-md overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="p-4 flex justify-between w-full items-center relative duration-300 bg-primary">

@@ -25,16 +25,18 @@ const Header = () => {
     <header className="fixed max-w-6xl w-full left-[50%] -translate-x-1/2 z-50">
       <div
         className={`flex justify-between items-center max-w-6xl bg-white rounded-full shadow-xl p-2 md:p-4 mx-4 duration-300 ${
-          scrolled ? "mt-0" : "mt-4 md:mt-8"
+          scrolled ? "mt-0" : "mt-2 md:mt-4"
         }`}>
         <div className="flex items-center">
           <img src={Logo} alt="Abonie Digital" className="w-10" />
-          <span className="text-black font-bold">Abonie Digital</span>
+          <span className="text-black font-bold md:text-lg">
+            Abonie Digital
+          </span>
         </div>
         <NavMenu />
 
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          <GiHamburgerMenu className="w-5 h-5 mr-2 text-black" />
+          <GiHamburgerMenu className="w-7 h-7 p-1 mr-2 text-black" />
         </button>
 
         <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />

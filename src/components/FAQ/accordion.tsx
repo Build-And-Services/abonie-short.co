@@ -14,7 +14,7 @@ const Accordion = ({
     <div data-aos="fade-up" className="shadow-xl rounded-md overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="p-4 flex justify-between w-full items-center relative duration-300 bg-primary">
+        className="p-4 flex justify-between w-full items-center relative duration-300 bg-primary hover:bg-opacity-90">
         <span className="md:text-lg text-white font-medium">{title}</span>
         <span>
           <RiArrowRightSLine

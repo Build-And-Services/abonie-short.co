@@ -38,7 +38,7 @@ const Jumbotron = () => {
                     placeholder="your-customize-link"
                   />
                 </div>
-                <button className="bg-primary md:bg-secondary w-full md:w-fit mt-6 md:mt-0 rounded py-1.5 px-2 text-white font-medium duration-300">
+                <button className="bg-primary md:bg-secondary hover:bg-opacity-90 w-full md:w-fit mt-6 md:mt-0 rounded py-1.5 px-2 text-white font-medium duration-150">
                   Shorten!
                 </button>
               </div>

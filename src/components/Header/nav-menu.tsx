@@ -10,8 +10,8 @@ const NavMenu = () => {
               href={item.link}
               className={`${
                 index === NAV_ITEM.length - 1
-                  ? "text-white font-bold bg-secondary px-4 py-3 rounded-full shadow-md"
-                  : "font-bold text-secondary"
+                  ? "text-white font-bold bg-secondary px-4 py-3 rounded-full shadow-md hover:bg-opacity-90"
+                  : "font-bold text-secondary hover:opacity-80"
               }`}>
               {item.title}
             </a>

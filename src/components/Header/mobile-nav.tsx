@@ -25,8 +25,8 @@ const MobileNav = ({
                 onClick={handleCloseNav}
                 className={`text-xl font-bold text-center block uppercase ${
                   index === NAV_ITEM.length - 1
-                    ? "bg-primary text-white px-4 py-2 rounded-full shadow-xl"
-                    : "text-primary"
+                    ? "bg-primary text-white px-4 py-2 rounded-full shadow-xl hover:bg-opacity-90"
+                    : "text-primary hover:opacity-80"
                 }`}>
                 {item.title}
               </a>

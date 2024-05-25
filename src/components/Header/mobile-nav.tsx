@@ -14,7 +14,7 @@ const MobileNav = ({
   return (
     <nav className={`md:hidden navbar-menu ${isOpen ? "open" : ""}`}>
       <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-        <MdOutlineClose className="w-8 h-8 p-1 text-black absolute top-8 right-8" />
+        <MdOutlineClose className="w-8 h-8 p-1 text-black absolute top-6 right-8" />
       </button>
       <div className="grid gap-4">
         {NAV_ITEM.map((item, index) => (

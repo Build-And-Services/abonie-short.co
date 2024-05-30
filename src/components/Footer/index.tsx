@@ -1,4 +1,4 @@
-import { NAV_ITEM } from "../../utils/constants/nav-item";
+import { NAVIGATIONS } from "../../constant/navigation";
 
 const Footer = () => {
   return (
@@ -126,7 +126,7 @@ const Footer = () => {
           &copy;2024 - Digital Abonie
         </span>
         <div className="flex gap-4">
-          {NAV_ITEM.slice(0, -1).map((item) => (
+          {NAVIGATIONS.slice(0, -1).map((item) => (
             <ul key={item.link}>
               <li>
                 <a

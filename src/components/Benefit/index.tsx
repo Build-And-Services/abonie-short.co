@@ -1,11 +1,11 @@
-import { BENEFIT_ITEM } from "../../utils/constants/benefit";
+import { BENEFITS } from "../../constant/benefit";
 
 const Benefit = () => {
   return (
     <section
       id="benefits"
       className="max-w-6xl mx-auto flex flex-wrap justify-center gap-10 pt-20 md:pt-0 md:-mt-20 px-4 duration-300">
-      {BENEFIT_ITEM.map((item) => (
+      {BENEFITS.map((item) => (
         <div
           key={item.title}
           data-aos="fade-up"

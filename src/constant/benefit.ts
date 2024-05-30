@@ -1,7 +1,7 @@
 import { RiLink, RiMouseLine, RiThumbUpLine } from "react-icons/ri";
-import { IBenefit } from "../interfaces/benefit";
+import { IBenefit } from "../types/static/benefit";
 
-export const BENEFIT_ITEM: IBenefit[] = [
+export const BENEFITS: IBenefit[] = [
   {
     icon: RiThumbUpLine,
     title: "Simple",

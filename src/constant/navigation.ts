@@ -1,6 +1,6 @@
-import { INavItem } from "../interfaces/nav-item";
+import { INavigation } from "../types/static/navigation";
 
-export const NAV_ITEM: INavItem[] = [
+export const NAVIGATIONS: INavigation[] = [
   {
     link: "#benefits",
     title: "Benefits",

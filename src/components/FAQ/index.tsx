@@ -1,4 +1,4 @@
-import { FAQ_ITEM } from "../../utils/constants/faq";
+import { FAQS } from "../../constant/faq";
 import Accordion from "./accordion";
 
 const FaQ = () => {
@@ -7,7 +7,7 @@ const FaQ = () => {
       <h2 className="text-center font-bold text-xl md:text-2xl mb-6">
         Frequently Asked Questions
       </h2>
-      {FAQ_ITEM.map((item) => (
+      {FAQS.map((item) => (
         <Accordion key={item.question} title={item.question}>
           <p>{item.answer}</p>
         </Accordion>

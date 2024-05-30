@@ -65,7 +65,7 @@ const HeroForm = () => {
           </button>
         </div>
       )}
-      <form onSubmit={handleSubmit} className="space-y-2">
+      <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
         <div>
           <label htmlFor="original_link">Shorten a long URL:</label>
           <input

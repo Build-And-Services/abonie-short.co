@@ -2,6 +2,7 @@ import { AxiosResponse } from "axios";
 import { useState } from "react";
 import { useCreateShortlink } from "../../hooks/useCreateShortlink";
 import { ShortResponse } from "../../types/response/short";
+import { SITE_URL } from "../../constant/api";
 
 const HeroForm = () => {
   const [url, setUrl] = useState({
@@ -48,7 +49,7 @@ const HeroForm = () => {
           <p>
             Shortlink created:{" "}
             <a href={successResult} className="text-blue-500 underline">
-              {successResult}
+              {SITE_URL + "/" + successResult}
             </a>
           </p>
           <button onClick={handleClear} className="text-gray-600 text-2xl">

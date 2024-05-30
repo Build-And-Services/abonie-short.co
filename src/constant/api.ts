@@ -1,5 +1,6 @@
-export const BASE_URL = "http://127.0.0.1:8000/api/";
-export const API_VERSION = "v1";
+export const SITE_URL = import.meta.env.VITE_SITE_URL || "";
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "";
+export const API_VERSION = import.meta.env.VITE_API_VERSION || "";
 
 export const ENDPOINTS = {
   SHORT: {

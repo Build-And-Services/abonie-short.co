@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Benefit from "./components/Benefit";
 import FAQ from "./components/FAQ";
-import Jumbotron from "./components/Jumbotron";
+import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -19,7 +19,7 @@ function App() {
   return (
     <main className="antialiased">
       <Header />
-      <Jumbotron />
+      <Hero />
       <Benefit />
       <FAQ />
       <Footer />

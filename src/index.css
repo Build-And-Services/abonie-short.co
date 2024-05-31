@@ -45,3 +45,7 @@
   clip-path: circle(150% at 100% 0%);
   transform: scale(1);
 }
+
+.redirect-link {
+  @apply h-dvh flex justify-center items-center;
+}

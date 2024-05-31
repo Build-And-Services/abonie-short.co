@@ -20,7 +20,7 @@ const RedirectLink = () => {
   }, [data]);
 
   if (isPending) {
-    return <div className="redirect-link">Redirecting...</div>;
+    return <div className="redirect-link">Loading...</div>;
   }
 
   if (isError) {
@@ -31,7 +31,7 @@ const RedirectLink = () => {
     return <div className="redirect-link">Short link has been banned</div>;
   }
 
-  return <div className="redirect-link">Loading...</div>;
+  return <div className="redirect-link">Redirecting...</div>;
 };
 
 export default RedirectLink;

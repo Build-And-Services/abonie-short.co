@@ -1,4 +1,4 @@
-import { AxiosResponse } from "axios";
+import axios, { AxiosResponse } from "axios";
 import { useState } from "react";
 import { useCreateShortlink } from "../../hooks/useCreateShortlink";
 import { ShortResponse } from "../../types/response/short";
@@ -27,8 +27,11 @@ const HeroForm = () => {
       setErrorResult(null);
     },
     onError: (res: AxiosResponse<ShortResponse>) => {
-      //@ts-ignore
-      setErrorResult(res.response.data.message);
+      if (axios.isAxiosError(res)) {
+        setErrorResult(res.response?.data?.message || res.message);
+      } else {
+        setErrorResult("An unexpected error occurred");
+      }
       setSuccessResult(null);
     },
   });

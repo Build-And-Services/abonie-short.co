@@ -86,7 +86,8 @@ const HeroForm = () => {
           <div className="mt-1 md:flex items-center gap-2">
             <div className="flex items-center border-collapse flex-1 bg-gradient-to-r from-primary to-secondary rounded p-0.5">
               <span className="px-2 py-1 font-medium text-white">
-                {SITE_URL}
+                {/* {SITE_URL} */}
+                demo.com/
               </span>
               <input
                 type="text"

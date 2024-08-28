@@ -7,4 +7,7 @@ export const ENDPOINTS = {
     GET: "/short",
     POST: "/short/create",
   },
+  COUNT: {
+    POST: "/views/count",
+  },
 };

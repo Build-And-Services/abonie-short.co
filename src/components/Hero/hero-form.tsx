@@ -51,7 +51,10 @@ const HeroForm = () => {
         <div className="p-2 bg-green-100 border border-green-200 rounded flex justify-between items-center">
           <p>
             Shortlink created:{" "}
-            <a href={successResult} className="text-blue-500 underline">
+            <a
+              href={successResult}
+              target="_blank"
+              className="text-blue-500 underline">
               {SITE_URL + successResult}
             </a>
           </p>

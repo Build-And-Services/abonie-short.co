@@ -89,7 +89,7 @@ const HeroForm = () => {
         <div>
           <label htmlFor="short_name">Customize your link (optional):</label>
           <div className="mt-1 md:flex items-center gap-2">
-            <div className="flex items-center border-collapse flex-1 bg-gradient-to-r from-primary to-secondary rounded p-0.5">
+            <div className="flex items-center border-collapse flex-1 bg-gradient-to-r from-secondary to-primary rounded p-0.5">
               <span className="px-2 py-1 font-medium text-white">
                 {displayUrl}
               </span>
@@ -104,7 +104,7 @@ const HeroForm = () => {
             </div>
             <button
               type={isPending ? "button" : "submit"}
-              className={`bg-primary md:bg-secondary min-w-24 hover:bg-opacity-90 w-full md:w-fit mt-6 md:mt-0 rounded py-1.5 px-2 text-white font-medium duration-150 ${
+              className={`bg-secondary min-w-24 hover:bg-opacity-90 w-full md:w-fit mt-6 md:mt-0 rounded py-1.5 px-2 text-white font-medium duration-150 ${
                 isPending ? "bg-opacity-90" : ""
               }`}>
               {isPending ? (

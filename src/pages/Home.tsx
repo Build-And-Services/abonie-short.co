@@ -11,7 +11,7 @@ function Home() {
   useEffect(() => {
     AOS.init({
       offset: 80,
-      duration: 300,
+      duration: 500,
       once: true,
       easing: "ease-out",
     });

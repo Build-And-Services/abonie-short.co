@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useRedirectLink } from "../hooks/useRedirectLink";
-import useCountView from "../hooks/useCountView";
+import { useCountView } from "../hooks/useCountView";
 
 const RedirectLink = () => {
   const { short_name } = useParams<{ short_name: string }>();
@@ -20,8 +20,8 @@ const RedirectLink = () => {
   }, [short_name, redirectLink]);
 
   useEffect(() => {
-    if (redirectData) {
-      countView(redirectData.data.data.id);
+    if (redirectData?.data?.data?.short_name) {
+      countView(redirectData.data.data.short_name);
     }
   }, [redirectData, countView]);
 

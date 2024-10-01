@@ -26,7 +26,7 @@ const RedirectLink = () => {
   }, [redirectData, countView]);
 
   useEffect(() => {
-    if (redirectData && redirectData.data.data.status) {
+    if (redirectData && redirectData.data.status) {
       const { original_link } = redirectData.data.data;
       window.location.href = original_link;
     }
@@ -37,9 +37,9 @@ const RedirectLink = () => {
       case isPending:
         return "Loading...";
       case isError:
-        return "Shortlink not found";
-      case redirectData && !redirectData.data.data.status:
-        return "Short link has been banned";
+        return "Shortlink not found.";
+      case redirectData && !redirectData.data.success:
+        return "Short link has been banned.";
       default:
         return "Redirecting...";
     }

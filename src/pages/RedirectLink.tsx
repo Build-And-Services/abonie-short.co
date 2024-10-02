@@ -26,7 +26,7 @@ const RedirectLink = () => {
   }, [redirectData, countView]);
 
   useEffect(() => {
-    if (redirectData && redirectData.data.status) {
+    if (redirectData && redirectData.data.success) {
       const { original_link } = redirectData.data.data;
       window.location.href = original_link;
     }
